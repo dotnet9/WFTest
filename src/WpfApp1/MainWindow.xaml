@@ -16,26 +16,23 @@
             <TextBox Width="100"></TextBox>
         </StackPanel>
         <GridSplitter Grid.Row="1"></GridSplitter>
-        <DataGrid Grid.Row="2" x:Name="dgData" RowEditEnding="DgData_OnRowEditEnding">
+        <DataGrid Grid.Row="2" x:Name="dgData">
             <!--需要完善,除了序号，基本完善-->
             <DataGrid.Columns>
 
                 <DataGridTemplateColumn Header=" 序号" Width="50" MinWidth="10" IsReadOnly="True">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <TextBlock Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type DataGridRow}}, Path=Header}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0"></TextBlock>
+                            <TextBlock
+                                Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type DataGridRow}}, Path=Header}"
+                                HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0">
+                            </TextBlock>
 
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
 
-                <DataGridTextColumn Binding="{Binding Name}" Width="*" Header="名称" IsReadOnly="False">
-<DataGridTextColumn.EditingElementStyle>
-    <Style TargetType="{x:Type TextBox}">
-        <EventSetter Event="LostKeyboardFocus" Handler="EventSetter_OnHandler"></EventSetter>
-    </Style>
-</DataGridTextColumn.EditingElementStyle>
-                    </DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Name}" Width="*" Header="名称" IsReadOnly="False"/>
 
             </DataGrid.Columns>
         </DataGrid>

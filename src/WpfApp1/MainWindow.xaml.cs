@@ -17,14 +17,10 @@ namespace WpfApp1
             InitializeComponent();
             dgData.ItemsSource = new List<TestItem> { new TestItem(){Name = "测试名称"}};
         }
-
-        private void EventSetter_OnHandler(object sender, KeyboardFocusChangedEventArgs e)
+        
+        private void DgData_OnLostFocus(object sender, RoutedEventArgs e)
         {
             dgData.CommitEdit();
-        }
-
-        private void DgData_OnRowEditEnding(object sender, DataGridRowEditEndingEventArgs e)
-        {
         }
     }
 
