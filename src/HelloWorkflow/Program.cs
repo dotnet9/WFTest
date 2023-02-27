@@ -12,7 +12,7 @@ namespace HelloWorkflow
 
             //WorkflowInvoker.Invoke(CreateWorkflowFromCode());   // 2、代码方式生成流程
 
-            var instance = new WorkflowApplication(new Workflow1());
+            var instance = new WorkflowApplication(new Workflow1());    // 3、WorkflowApplication
             instance.Completed += WorkflowCompleted;
             Console.WriteLine(instance.Id);
             instance.Run();

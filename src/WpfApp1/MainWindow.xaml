@@ -12,11 +12,11 @@
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal">
-            <Button Content="Teest"></Button>
+            <Button Content="Test"></Button>
             <TextBox Width="100"></TextBox>
         </StackPanel>
         <GridSplitter Grid.Row="1"></GridSplitter>
-        <DataGrid Grid.Row="2" x:Name="dgData">
+        <DataGrid Grid.Row="2" x:Name="MyDataGrid">
             <!--需要完善,除了序号，基本完善-->
             <DataGrid.Columns>
 
@@ -32,7 +32,7 @@
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
 
-                <DataGridTextColumn Binding="{Binding Name}" Width="*" Header="名称" IsReadOnly="False"/>
+                <DataGridTextColumn Binding="{Binding Name}" Width="*" Header="名称" IsReadOnly="False" />
 
             </DataGrid.Columns>
         </DataGrid>

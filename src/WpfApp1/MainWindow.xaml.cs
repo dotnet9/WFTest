@@ -15,12 +15,12 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
-            dgData.ItemsSource = new List<TestItem> { new TestItem(){Name = "测试名称"}};
+            MyDataGrid.ItemsSource = new List<TestItem> { new TestItem(){Name = "测试名称"}};
+            this.MouseDown += (s, e) => MyDataGrid.CommitEdit();
         }
-        
-        private void DgData_OnLostFocus(object sender, RoutedEventArgs e)
-        {
-            dgData.CommitEdit();
+
+        private void DgData_OnMouseLeave(object sender, MouseEventArgs e) {
+            MyDataGrid.CommitEdit();
         }
     }
 
