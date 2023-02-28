@@ -1,7 +1,4 @@
-﻿using System;
-using System.Activities;
-using System.Activities.Statements;
-using System.Linq;
+﻿using System.Activities;
 
 namespace CodeActivitySample
 {
@@ -10,7 +7,7 @@ namespace CodeActivitySample
         static void Main(string[] args)
         {
             Activity workflow1 = new Workflow1();
-            WorkflowInvoker.Invoke(new MyCodeActivity());
+            WorkflowInvoker.Invoke(workflow1);
         }
     }
 }
