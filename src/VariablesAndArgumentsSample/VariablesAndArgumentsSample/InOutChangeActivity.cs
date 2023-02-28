@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Activities;
 
 namespace VariablesAndArgumentsSample
 {
-
     public sealed class InOutChangeActivity : CodeActivity
     {
         public InOutArgument<string> myInOut { get; set; }
