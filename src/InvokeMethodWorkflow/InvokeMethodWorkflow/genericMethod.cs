@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace InvokeMethodWorkflow
-{
-  public   class genericMethod
+﻿namespace InvokeMethodWorkflow {
+    public   class genericMethod
     {
       public int myMethod<T1, T2>(T1 v1, T2 v2)
       {

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelayAndThreadWorkflow", "DelayAndThreadWorkflow\DelayAndThreadWorkflow.csproj", "{BDB31B20-3636-44A0-9C8A-2C0C7FAE0E81}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDB31B20-3636-44A0-9C8A-2C0C7FAE0E81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDB31B20-3636-44A0-9C8A-2C0C7FAE0E81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDB31B20-3636-44A0-9C8A-2C0C7FAE0E81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDB31B20-3636-44A0-9C8A-2C0C7FAE0E81}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

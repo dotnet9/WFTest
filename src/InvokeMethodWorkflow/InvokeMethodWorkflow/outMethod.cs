@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace InvokeMethodWorkflow
+﻿namespace InvokeMethodWorkflow
 {
-  public  class outMethod
+    public class outMethod
     {
-      public void myMethod(int v1, out int v2)
-      {
-          v2 = v1  * 10;
-      }
+        public void myMethod(int v1, out int v2)
+        {
+            v2 = v1 * 10;
+        }
     }
 }
