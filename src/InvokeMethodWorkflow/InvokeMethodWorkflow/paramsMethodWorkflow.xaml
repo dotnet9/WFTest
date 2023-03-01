@@ -1,0 +1,27 @@
+﻿<Activity mc:Ignorable="sap" x:Class="InvokeMethodWorkflow.paramsMethodWorkflow" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:i="clr-namespace:InvokeMethodWorkflow;assembly=InvokeMethodWorkflow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:local="clr-namespace:InvokeMethodWorkflow" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mv="clr-namespace:Microsoft.VisualBasic;assembly=System" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:s1="clr-namespace:System;assembly=System" xmlns:s2="clr-namespace:System;assembly=System.Xml" xmlns:s3="clr-namespace:System;assembly=System.Core" xmlns:sa="clr-namespace:System.Activities;assembly=System.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:sad="clr-namespace:System.Activities.Debugger;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System" xmlns:scg1="clr-namespace:System.Collections.Generic;assembly=System.ServiceModel" xmlns:scg2="clr-namespace:System.Collections.Generic;assembly=System.Core" xmlns:scg3="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:sd1="clr-namespace:System.Data;assembly=System.Data.DataSetExtensions" xmlns:sl="clr-namespace:System.Linq;assembly=System.Core" xmlns:st="clr-namespace:System.Text;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Sequence sad:XamlDebuggerXmlReader.FileName="D:\Users\wxd\Documents\Visual Studio 2010\Projects\InvokeMethodWorkflow\InvokeMethodWorkflow\paramsMethodWorkflow.xaml" sap:VirtualizedContainerService.HintSize="246,358">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="wxd" Name="p1" />
+      <Variable x:TypeArguments="x:String" Default="lzm" Name="p2" />
+      <Variable x:TypeArguments="x:String" Default="wxwinter" Name="p3" />
+      <Variable x:TypeArguments="x:String" Name="r" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg3:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg3:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <InvokeMethod sap:VirtualizedContainerService.HintSize="224,132" MethodName="myMethod">
+      <InvokeMethod.Result>
+        <OutArgument x:TypeArguments="x:String">[r]</OutArgument>
+      </InvokeMethod.Result>
+      <InvokeMethod.TargetObject>
+        <InArgument x:TypeArguments="local:paramsMethod">[New InvokeMethodWorkflow.paramsMethod()]</InArgument>
+      </InvokeMethod.TargetObject>
+      <InArgument x:TypeArguments="x:String">[p1]</InArgument>
+      <InArgument x:TypeArguments="x:String">[p2]</InArgument>
+      <InArgument x:TypeArguments="x:String">[p3]</InArgument>
+    </InvokeMethod>
+    <WriteLine sap:VirtualizedContainerService.HintSize="224,62" Text="[r.ToString()]" />
+  </Sequence>
+</Activity>
